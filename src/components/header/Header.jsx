@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../../assets/img/rianflix.png';
 import './Header.css';
 
-import ButtonLink from './components/buttonLink/ButtonLink';
+import Button from '../button/Button';
 
 export default function Header() {
     return (
@@ -11,9 +11,9 @@ export default function Header() {
                 <img className="logo" src={Logo} alt="Logo do RianFlix"/>
             </a>
 
-            <ButtonLink className="button-link" href="/">
+            <Button as="a" className="button-link" href="/">
                 Novo vídeo
-            </ButtonLink>
+            </Button>
         </header>
     );
 }
