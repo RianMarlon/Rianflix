@@ -104,7 +104,7 @@ export const WatchButton = styled.button`
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 16px 24px;
+    padding: 0;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -125,4 +125,6 @@ export const WatchButton = styled.button`
 
 export const Link = styled.a`
     text-decoration: none;
+    display: block;
+    padding: 16px 24px;
 `;
