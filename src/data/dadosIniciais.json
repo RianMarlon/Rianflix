@@ -2,7 +2,7 @@
   "categorias": [
     {
       "titulo": "Programação",
-      "cor": "#6BD1FF",
+      "cor": "#CD0000",
       "link_extra": {
         "text": "Minha lista de vídeos/canais preferidos sobre programação",
         "url": "/"
@@ -29,6 +29,18 @@
           "url": "https://www.youtube.com/watch?v=eUwiTnK0EA0"
         },
         {
+          "titulo": "O que é SQL e NoSQL? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=aure5d3B88g"
+        },
+        {
+          "titulo": "O que são Microsserviços? (Microservices) #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=jSnLOoGjQ80"
+        },
+        {
+          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+        },
+        {
           "titulo": "O que estudar para ser programador / desenvolvedor?",
           "url": "https://www.youtube.com/watch?v=6PBJUxIiRBI"
         },
@@ -44,7 +56,7 @@
     },
     {
       "titulo": "Aperfeiçoar aprendizagem",
-      "cor": "#6b5be2",
+      "cor": "#9400D3",
       "link_extra": {
         "text": "Vídeos que podem mudar seu modo de aprender",
         "url": "/"
@@ -74,7 +86,7 @@
     },
     {
       "titulo": "Games",
-      "cor": "red",
+      "cor": "#008000",
       "link_extra": {
         "text": "Minha lista de jogos preferidos/esperados",
         "url": "/"
