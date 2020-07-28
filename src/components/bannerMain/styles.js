@@ -111,7 +111,6 @@ export const WatchButton = styled.button`
     outline: none;
     border-radius: 5px;
     text-decoration: none;
-    display: inline-block;
     border: 1px solid transparent;
     color: var(--black);
     background: var(--white);
@@ -122,4 +121,8 @@ export const WatchButton = styled.button`
     @media (max-width: 800px) {
         display: block;
     }
+`;
+
+export const Link = styled.a`
+    text-decoration: none;
 `;
