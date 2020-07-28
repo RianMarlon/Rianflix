@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/img/rianflix.png';
+import Logo from '../../assets/img/logo.png';
 import './Header.css';
 
 import Button from '../button/Button';
