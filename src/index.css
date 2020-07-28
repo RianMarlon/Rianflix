@@ -10,8 +10,8 @@
     --gray-light: #F5F5F5;
     --gray-medium: #E5E5E5;
     --white: #FFFFFF;
-    --front-end: #6BD1FF;
-    --back-end: #00C86F;
+
+    --main-background-color: #141414;
 }
 
 html, body {
@@ -19,10 +19,10 @@ html, body {
     padding: 0;
 }
 
-body {
-    background-color: #141414;
-}
-
 a {
     color: inherit;
+}
+
+#root {
+    min-height: 100vh;
 }
