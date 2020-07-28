@@ -24,5 +24,7 @@ a {
 }
 
 #root {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--body-padding-top));
+    display: flex;
+    flex-direction: column;
 }

@@ -13,9 +13,9 @@ const Main = styled.main`
     background-color: var(--main-background-color);
     color: var(--white);
     flex: 1;
-    padding-top: 50px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 50px;
 `
 
 export default function App() {
