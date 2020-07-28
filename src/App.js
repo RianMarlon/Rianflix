@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
+import CadastroVideo from './pages/cadastroVideo/CadastroVideo';
 import Footer from './components/footer/Footer';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
             <main>
                 <Switch>
                     <Route path="/" component={Home} exact />
+                    <Route path="/cadastro/video" component={CadastroVideo} />
                     <Route path="/" component={Home} />
                 </Switch>
             </main>
