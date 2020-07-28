@@ -6,6 +6,16 @@ export default function CadastroVideo() {
         <div>
             <h1>Cadastro de categoria</h1>
 
+            <form>
+                <label htmlFor="nome-categoria">
+                    Nome da categoria
+                </label>
+
+                <input type="text" id="nome-categoria"/>
+
+                <button>Cadastrar</button>
+            </form>
+
             <Link to="/">
                 Voltar para home
             </Link>
