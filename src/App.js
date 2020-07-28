@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import CadastroVideo from './pages/cadastroVideo/CadastroVideo';
+import CadastroCategoria from './pages/cadastroCategoria/CadastroCategoria';
 import Footer from './components/footer/Footer';
 
 import styled from 'styled-components'
@@ -26,6 +27,7 @@ export default function App() {
                 <Switch>
                     <Route path="/" component={Home} exact />
                     <Route path="/cadastro/video" component={CadastroVideo} />
+                    <Route path="/cadastro/categoria" component={CadastroCategoria} />
                     <Route path="/" component={Home} />
                 </Switch>
             </Main>
