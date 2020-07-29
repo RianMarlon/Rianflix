@@ -6,7 +6,7 @@ import Slider, { SliderItem } from './components/slider/Slider';
 function VideoCardGroup({ ignoreFirstVideo, category }) {
     const categoryTitle = category.titulo;
     const categoryColor = category.cor;
-    const categoryDescription = category.description;
+    const categoryDescription = category.descricao;
     const videos = category.videos;
     return (
         <VideoCardGroupContainer>
@@ -17,7 +17,7 @@ function VideoCardGroup({ ignoreFirstVideo, category }) {
                 </Title>
                 {categoryDescription && 
                     <Description>
-                        {categoryDescription.text}  
+                        {categoryDescription}  
                     </Description>
                 }
                 </>

@@ -3,9 +3,7 @@
     {
       "titulo": "Programação",
       "cor": "#CD0000",
-      "description": {
-        "text": "Minha lista de vídeos/canais preferidos sobre programação"
-      },
+      "descricao": "Minha lista de vídeos/canais preferidos sobre programação",
       "videos": [
         {
           "titulo": "Como ORGANIZAR a sua APLICAÇÃO? Essa DICA vai te AJUDAR!!",
@@ -56,9 +54,7 @@
     {
       "titulo": "Aperfeiçoar aprendizagem",
       "cor": "#9400D3",
-      "description": {
-        "text": "Vídeos que podem mudar seu modo de aprender"
-      },
+      "descricao": "Vídeos que podem mudar seu modo de aprender",
       "videos": [
         {
           "titulo": "Organize a sua Rotina de Estudo de Programação! UM Assunto ou VÁRIOS Assuntos?",
@@ -85,9 +81,7 @@
     {
       "titulo": "Games",
       "cor": "#008000",
-      "description": {
-        "text": "Minha lista de jogos preferidos/esperados"
-      },
+      "descricao": "Minha lista de jogos preferidos/esperados",
       "videos": [
         {
           "titulo": "God of War 4",
