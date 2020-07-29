@@ -3,9 +3,8 @@
     {
       "titulo": "Programação",
       "cor": "#CD0000",
-      "link_extra": {
-        "text": "Minha lista de vídeos/canais preferidos sobre programação",
-        "url": "/"
+      "description": {
+        "text": "Minha lista de vídeos/canais preferidos sobre programação"
       },
       "videos": [
         {
@@ -57,9 +56,8 @@
     {
       "titulo": "Aperfeiçoar aprendizagem",
       "cor": "#9400D3",
-      "link_extra": {
-        "text": "Vídeos que podem mudar seu modo de aprender",
-        "url": "/"
+      "description": {
+        "text": "Vídeos que podem mudar seu modo de aprender"
       },
       "videos": [
         {
@@ -87,9 +85,8 @@
     {
       "titulo": "Games",
       "cor": "#008000",
-      "link_extra": {
-        "text": "Minha lista de jogos preferidos/esperados",
-        "url": "/"
+      "description": {
+        "text": "Minha lista de jogos preferidos/esperados"
       },
       "videos": [
         {
