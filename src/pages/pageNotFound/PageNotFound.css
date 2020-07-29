@@ -1,0 +1,30 @@
+.error {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error h1 {
+    font-size: 3.25rem;
+}
+
+.error h2 {
+    font-size: 2rem;
+}
+
+.error p {
+    margin-top: 30px;
+    font-size: 1.25rem;
+}
+
+.error a {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.error a:hover {
+    color: var(--primary);
+}

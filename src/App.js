@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Home from './pages/home/Home';
 import CadastroVideo from './pages/cadastroVideo/CadastroVideo';
 import CadastroCategoria from './pages/cadastroCategoria/CadastroCategoria';
+import PageNotFound from './pages/pageNotFound/PageNotFound';
 import Footer from './components/footer/Footer';
 
 import styled from 'styled-components'
@@ -28,7 +29,7 @@ export default function App() {
                     <Route path="/" component={Home} exact />
                     <Route path="/cadastro/video" component={CadastroVideo} />
                     <Route path="/cadastro/categoria" component={CadastroCategoria} />
-                    <Route path="/" component={Home} />
+                    <Route path="/" component={PageNotFound} />
                 </Switch>
             </Main>
             <Footer />
