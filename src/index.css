@@ -7,8 +7,10 @@
     --primary: #DB202C;
     --black: #000000;
     --black-lighter: #9E9E9E;
-    --gray-light: #F5F5F5;
-    --gray-medium: #E5E5E5;
+    --black-medium: #53585D;
+    --gray-light: #E5E5E5;
+    --gray-medium: #C5C5C5;
+    --gray-dark: #B5B5B5;
     --white: #FFFFFF;
 
     --main-background-color: #141414;
