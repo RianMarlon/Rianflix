@@ -24,16 +24,19 @@ const CategoriaWrapper = styled.div`
         list-style: none;
     }
 
-    .cadastrar {
-        background-color: var(--primary);
+    .cadastrar, .limpar {
+        font-weight: 400;
         cursor: pointer;
         padding: 14px 18px;
+        border: none;
+    }
+
+    .cadastrar {
+        background-color: #4169E1;
     }
 
     .limpar {
         background-color: #4F4F4F;
-        cursor: pointer;
-        padding: 14px 18px;
     }
 
     @media(max-width: 800px) {

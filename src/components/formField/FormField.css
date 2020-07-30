@@ -35,7 +35,7 @@ input::placeholder, textarea::placeholder{
 input[type="color"] {
     height: 55px;
     padding: 8px;
-    width: 78px;
+    width: 200px;
 }
 
 @media(max-width: 800px) {

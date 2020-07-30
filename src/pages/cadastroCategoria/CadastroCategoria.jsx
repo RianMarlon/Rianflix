@@ -1,9 +1,12 @@
+/* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CategoriaWrapper from './style';
 import Form from '../../components/form/Form';
 import FormField from '../../components/formField/FormField';
 import FormButtonGroup from '../../components/formButtonGroup/FormButtonGroup';
+
+import Button from '../../components/button/Button';
 
 export default function CadastroVideo() {
   const [categorias, setCategorias] = useState(['Teste']);
@@ -68,8 +71,8 @@ export default function CadastroVideo() {
         />
 
         <FormButtonGroup>
-          <button className="cadastrar" onClick={handleSubmit}>Cadastrar</button>
-          <button className="limpar" onClick={reset}>Limpar</button>
+          <Button className="cadastrar" onClick={handleSubmit}>Cadastrar</Button>
+          <Button className="limpar" onClick={reset}>Limpar</Button>
         </FormButtonGroup>
       </Form>
 
