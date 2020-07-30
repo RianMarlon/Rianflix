@@ -20,15 +20,15 @@ const CategoriaWrapper = styled.div`
     }
 
     ul {
-        padding-left: 0;
         list-style: none;
+        padding-left: 0;
     }
 
     .cadastrar, .limpar {
-        font-weight: 400;
-        cursor: pointer;
-        padding: 14px 18px;
         border: none;
+        cursor: pointer;
+        font-weight: 400;
+        padding: 14px 18px;
     }
 
     .cadastrar {
@@ -40,8 +40,8 @@ const CategoriaWrapper = styled.div`
     }
 
     @media(max-width: 800px) {
-        margin-bottom: 40px;
         margin-top: 80px;
+        margin-bottom: 40px;
     
         h1 {
             font-size: 1.9rem;

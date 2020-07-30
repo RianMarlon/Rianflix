@@ -78,10 +78,8 @@ export default function CadastroVideo() {
 
       <ul>
         {
-          categorias.map((categoria, indice) => (
-            <li key={indice}>
-              {indice}
-              .
+          categorias.map((categoria) => (
+            <li key={categoria.nome}>
               {categoria.nome}
               {' '}
               -
