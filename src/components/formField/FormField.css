@@ -28,6 +28,7 @@ input:focus, textarea:focus {
 
 input::placeholder, textarea::placeholder{
     color: var(--gray-medium);
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -41,9 +42,4 @@ input[type="color"] {
     label {
         font-size: 1.1rem;
     }
-
-    input::placeholder, textarea::placeholder{
-        font-size: 1rem;
-    }
-
 }
