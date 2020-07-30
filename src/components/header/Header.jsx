@@ -6,15 +6,15 @@ import './Header.css';
 import Button from '../button/Button';
 
 export default function Header() {
-    return (
-        <header className="header">
-            <Link to="/">
-                <img className="logo" src={Logo} alt="Logo do RianFlix"/>
-            </Link>
+  return (
+    <header className="header">
+      <Link to="/">
+        <img className="logo" src={Logo} alt="Logo do RianFlix" />
+      </Link>
 
-            <Button as={Link} className="button-link" to="/cadastro/video">
-                Novo vídeo
-            </Button>
-        </header>
-    );
+      <Button as={Link} className="button-link" to="/cadastro/video">
+        Novo vídeo
+      </Button>
+    </header>
+  );
 }

@@ -1,6 +1,7 @@
+/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
-export const VideoCardContainer = styled.a`
+const VideoCardContainer = styled.a`
     border: 2px solid;
     border-radius: 4px;
     text-decoration: none;
@@ -29,3 +30,5 @@ export const VideoCardContainer = styled.a`
         margin-left: 20px;
     }
 `;
+
+export default VideoCardContainer;
