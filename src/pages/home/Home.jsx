@@ -24,7 +24,7 @@ export default function Home() {
 
             <Carousel
                 category={dadosIniciais.categorias[2]}
-            />      
+            />  
         </>
     );
 }
