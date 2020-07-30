@@ -48,14 +48,15 @@ export default function CadastroVideo() {
                     value={values.nome}
                     onChange={setValue} />
 
-                <label htmlFor="descricao-categoria">Descrição da categoria</label>
-
-                <textarea 
+                <FormField 
                     id="descricao-categoria"
+                    type="textarea"
                     name="descricao"
+                    label="Descrição da categoria"
                     placeholder="Informe a descrição da categoria..."
                     value={values.descricao}
-                    onChange={setValue} />
+                    onChange={setValue} 
+                />
 
                 <FormField 
                     id="cor-categoria"
@@ -63,7 +64,8 @@ export default function CadastroVideo() {
                     name="cor"
                     label="Cor da categoria"
                     value={values.cor}
-                    onChange={setValue} />
+                    onChange={setValue} 
+                />
 
                 <FormButtonGroup>
                     <button className="cadastrar" onClick={handleSubmit}>Cadastrar</button>

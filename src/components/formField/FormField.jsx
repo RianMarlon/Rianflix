@@ -12,7 +12,7 @@ export default function FormField({ label, idField, name, type, value, onChange,
 
         input = <textarea {...props}></textarea>
     }
-    
+
     return (
         <div>
             <label htmlFor={idField}>{label}</label>
