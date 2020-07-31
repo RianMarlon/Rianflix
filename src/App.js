@@ -5,8 +5,8 @@ import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
-import CadastreVideo from './pages/cadastroVideo/CadastreVideo';
-import CadastreCategory from './pages/cadastroCategoria/CadastreCategory';
+import CadastreVideo from './pages/cadastreVideo/CadastreVideo';
+import CadastreCategory from './pages/cadastreCategory/CadastreCategory';
 import PageNotFound from './pages/pageNotFound/PageNotFound';
 import Footer from './components/footer/Footer';
 
