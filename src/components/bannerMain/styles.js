@@ -50,21 +50,27 @@ export const ContentAreaContainer = styled.section`
         flex-direction: column;
         padding-top: 100px;
     }
-    `;
+`;
 
 ContentAreaContainer.Item = styled.div`
     margin-bottom: 50px;
     width: 46%;
-    padding-right: 2%;
-    padding-left: 2%;
+
+    &:nth-child(1) {
+        margin-right: 8%;
+    }
     
     @media (max-width: 800px) {
         width: 100%;
+        
+        &:nth-child(1) {
+            margin-right: 0;
+        }
     }
 `;
 
-ContentAreaContainer.Title = styled.h2`
-    font-size: 40px;
+ContentAreaContainer.Title = styled.h1`
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: 1;
@@ -111,4 +117,4 @@ export const Link = styled.a`
     display: block;
     padding: 16px 24px;
     text-decoration: none;
-    `;
+`;
