@@ -1,5 +1,22 @@
 {
   "categories": [
-    
+    {
+      "name": "Cadastro",
+      "description": "descrição",
+      "color": "#FF0000",
+      "id": 1
+    },
+    {
+      "name": "jnkjkjjkb",
+      "description": "uigyuu",
+      "color": "#FF0000",
+      "id": 2
+    },
+    {
+      "name": "ewrewr",
+      "description": "ewrerew",
+      "color": "#FF0000",
+      "id": 3
+    }
   ]
 }
