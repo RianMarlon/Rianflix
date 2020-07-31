@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CategoriaWrapper = styled.div`
+const CategoryWrapper = styled.div`
     margin-bottom: 40px;
     margin-top: 50px;
     
@@ -24,18 +24,18 @@ const CategoriaWrapper = styled.div`
         padding-left: 0;
     }
 
-    .cadastrar, .limpar {
+    .register, .clean {
         border: none;
         cursor: pointer;
         font-weight: 400;
         padding: 14px 18px;
     }
 
-    .cadastrar {
+    .register {
         background-color: #4169E1;
     }
 
-    .limpar {
+    .clean {
         background-color: #4F4F4F;
     }
 
@@ -49,4 +49,4 @@ const CategoriaWrapper = styled.div`
     }
 `;
 
-export default CategoriaWrapper;
+export default CategoryWrapper;

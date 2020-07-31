@@ -4,9 +4,9 @@ import VideoCard from './components/videoCard/VideoCard';
 import Slider, { SliderItem } from './components/slider/Slider';
 
 function VideoCardGroup({ ignoreFirstVideo, category }) {
-  const categoryTitle = category.titulo;
-  const categoryColor = category.cor;
-  const categoryDescription = category.descricao;
+  const categoryTitle = category.title;
+  const categoryColor = category.color;
+  const categoryDescription = category.description;
   const { videos } = category;
   return (
     <VideoCardGroupContainer>

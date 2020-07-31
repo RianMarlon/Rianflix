@@ -1,118 +1,118 @@
 {
-  "categorias": [
+  "categories": [
     {
-      "titulo": "Programação",
-      "cor": "#CD0000",
-      "descricao": "Minha lista de vídeos/canais preferidos sobre programação",
+      "title": "Programação",
+      "color": "#CD0000",
+      "description": "Minha lista de vídeos/canais preferidos sobre programação",
       "videos": [
         {
-          "titulo": "Como ORGANIZAR a sua APLICAÇÃO? Essa DICA vai te AJUDAR!!",
+          "title": "Como ORGANIZAR a sua APLICAÇÃO? Essa DICA vai te AJUDAR!!",
           "url": "https://www.youtube.com/watch?v=x1Td6YnCjfg"
         },
         {
-          "titulo": "Esta TÉCNICA vai te tornar um(a) PROGRAMADOR(A) MELHOR!!",
+          "title": "Esta TÉCNICA vai te tornar um(a) PROGRAMADOR(A) MELHOR!!",
           "url": "https://www.youtube.com/watch?v=yZTaRsoV3PQ"
         },
         {
-          "titulo": "Como JavaScript FUNCIONA?",
+          "title": "Como JavaScript FUNCIONA?",
           "url": "https://www.youtube.com/watch?v=gb7FDfvHlGg"
         },
         {
-          "titulo": "Graduado, Técnico ou Autodidata: Quem nós contrataríamos? // CAC #9",
+          "title": "Graduado, Técnico ou Autodidata: Quem nós contrataríamos? // CAC #9",
           "url": "https://www.youtube.com/watch?v=MaglJvzTwJc"
         },
         {
-          "titulo": "LIVE: Quando me tornei um Programador Profissional (A História de 16 Programadores)",
+          "title": "LIVE: Quando me tornei um Programador Profissional (A História de 16 Programadores)",
           "url": "https://www.youtube.com/watch?v=eUwiTnK0EA0"
         },
         {
-          "titulo": "O que é SQL e NoSQL? #HipstersPontoTube",
+          "title": "O que é SQL e NoSQL? #HipstersPontoTube",
           "url": "https://www.youtube.com/watch?v=aure5d3B88g"
         },
         {
-          "titulo": "O que são Microsserviços? (Microservices) #HipstersPontoTube",
+          "title": "O que são Microsserviços? (Microservices) #HipstersPontoTube",
           "url": "https://www.youtube.com/watch?v=jSnLOoGjQ80"
         },
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+          "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
           "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
         },
         {
-          "titulo": "O que estudar para ser programador / desenvolvedor?",
+          "title": "O que estudar para ser programador / desenvolvedor?",
           "url": "https://www.youtube.com/watch?v=6PBJUxIiRBI"
         },
         {
-          "titulo": "CLEAN CODE #2: O que é código limpo?",
+          "title": "CLEAN CODE #2: O que é código limpo?",
           "url": "https://www.youtube.com/watch?v=ZVtGbO_CnfA"
         },
         {
-          "titulo": "O Framework Que Vai Mudar Como Você Faz Desenvolvimento Web Daqui Pra Frente",
+          "title": "O Framework Que Vai Mudar Como Você Faz Desenvolvimento Web Daqui Pra Frente",
           "url": "https://www.youtube.com/watch?v=WVtijTZPZck"
         }
       ]
     },
     {
-      "titulo": "Aperfeiçoar aprendizagem",
-      "cor": "#9400D3",
-      "descricao": "Vídeos que podem mudar seu modo de aprender",
+      "title": "Aperfeiçoar aprendizagem",
+      "color": "#9400D3",
+      "description": "Vídeos que podem mudar seu modo de aprender",
       "videos": [
         {
-          "titulo": "Organize a sua Rotina de Estudo de Programação! UM Assunto ou VÁRIOS Assuntos?",
+          "title": "Organize a sua Rotina de Estudo de Programação! UM Assunto ou VÁRIOS Assuntos?",
           "url": "https://www.youtube.com/watch?v=ULI3-LeWSVY"
         },
         {
-          "titulo": "COMO APRENDER MAIS RÁPIDO E MELHOR? (Super Conselho #1)",
+          "title": "COMO APRENDER MAIS RÁPIDO E MELHOR? (Super Conselho #1)",
           "url": "https://www.youtube.com/watch?v=x2JEhkmyeKQ"
         },
         {
-          "titulo": "Macetes para Aprender uma Linguagem de Programação Nova // Vlog #19",
+          "title": "Macetes para Aprender uma Linguagem de Programação Nova // Vlog #19",
           "url": "https://www.youtube.com/watch?v=hOVxpMCkozI"
         },
         {
-          "titulo": "Como posso estudar melhor? #HipstersPontoTube",
+          "title": "Como posso estudar melhor? #HipstersPontoTube",
           "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk"
         },
         {
-          "titulo": "Como aprender a programar?",
+          "title": "Como aprender a programar?",
           "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
         }
       ]
     },
     {
-      "titulo": "Games",
-      "cor": "#008000",
-      "descricao": "Minha lista de jogos preferidos/esperados",
+      "title": "Games",
+      "color": "#008000",
+      "description": "Minha lista de jogos preferidos/esperados",
       "videos": [
         {
-          "titulo": "God of War 4",
+          "title": "God of War 4",
           "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
         },
         {
-          "titulo": "The Last Of Us 2",
+          "title": "The Last Of Us 2",
           "url": "https://www.youtube.com/watch?v=aqcBjWXlWMU"
         },
         {
-          "titulo": "RIO Raised In Oblivion",
+          "title": "RIO Raised In Oblivion",
           "url": "https://www.youtube.com/watch?v=l8ypmhlLtUE"
         },
         {
-          "titulo": "Resident Evil 8",
+          "title": "Resident Evil 8",
           "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
         },
         {
-          "titulo": "Cyberpunk 2077",
+          "title": "Cyberpunk 2077",
           "url": "https://www.youtube.com/watch?v=ixl31324UxE"
         },
         {
-          "titulo": "Tom Clacy's Rainbox Six Siege",
+          "title": "Tom Clacy's Rainbox Six Siege",
           "url": "https://www.youtube.com/watch?v=6wlvYh0h63k"
         },
         {
-          "titulo": "Battlefield 4",
+          "title": "Battlefield 4",
           "url": "https://www.youtube.com/watch?v=hl-VV9loYLw"
         },
         {
-          "titulo": "Battlefield 1",
+          "title": "Battlefield 1",
           "url": "https://www.youtube.com/watch?v=c7nRTF2SowQ"
         }
       ]

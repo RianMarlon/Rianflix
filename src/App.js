@@ -5,8 +5,8 @@ import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from './components/header/Header';
 import Home from './pages/home/Home';
-import CadastroVideo from './pages/cadastroVideo/CadastroVideo';
-import CadastroCategoria from './pages/cadastroCategoria/CadastroCategoria';
+import CadastreVideo from './pages/cadastroVideo/CadastreVideo';
+import CadastreCategory from './pages/cadastroCategoria/CadastreCategory';
 import PageNotFound from './pages/pageNotFound/PageNotFound';
 import Footer from './components/footer/Footer';
 
@@ -26,8 +26,8 @@ export default function App() {
       <Main>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/cadastro/video" component={CadastroVideo} />
-          <Route path="/cadastro/categoria" component={CadastroCategoria} />
+          <Route path="/cadastro/video" component={CadastreVideo} />
+          <Route path="/cadastro/categoria" component={CadastreCategory} />
           <Route path="/" component={PageNotFound} />
         </Switch>
       </Main>
