@@ -35,14 +35,29 @@ export default function CadastreCategory() {
     setCategory(newCategory);
   }
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    setCategories([...categories, category]);
+  function getUpdatedCategories(newCategory) {
+    const newCategories = categories.filter((c) => c.id !== newCategory.id);
+    newCategories.unshift(newCategory);
+    setCategories(newCategories);
   }
 
-  function reset(event) {
+  function clear() {
+    setCategory({ ...initialState });
+  }
+
+  function save() {
+    if (!category.name.trim() || !category.description.trim()) return;
+
+    axios.post(URL_BASE, category)
+      .then((resp) => {
+        getUpdatedCategories(resp.data);
+        clear();
+      });
+  }
+
+  function handleSubmit(event) {
     event.preventDefault();
-    setCategories([]);
+    save();
   }
 
   return (
@@ -72,7 +87,7 @@ export default function CadastreCategory() {
         />
 
         <FormField
-          idField="cor-categoria"
+          idField="color-category"
           type="color"
           name="color"
           label="Cor da categoria"
@@ -82,13 +97,13 @@ export default function CadastreCategory() {
 
         <FormButtonGroup>
           <Button className="register" onClick={handleSubmit}>Cadastrar</Button>
-          <Button className="clean" onClick={reset}>Limpar</Button>
+          <Button className="clean" onClick={clear}>Limpar</Button>
         </FormButtonGroup>
       </Form>
 
       <ul>
         { categories.map((category) => (
-          <li key={category.name}>
+          <li key={category.id}>
             {category.name}
             {' '}
             -
