@@ -1,15 +1,15 @@
 /* eslint-disable react/no-array-index-key */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import CategoriaWrapper from './style';
 import Form from '../../components/form/Form';
 import FormField from '../../components/formField/FormField';
 import FormButtonGroup from '../../components/formButtonGroup/FormButtonGroup';
-
 import Button from '../../components/button/Button';
 
 export default function CadastroVideo() {
-  const [categorias, setCategorias] = useState(['Teste']);
+  const [categorias, setCategorias] = useState([]);
 
   const valoresIniciais = {
     nome: '',
@@ -35,6 +35,16 @@ export default function CadastroVideo() {
     setCategorias([]);
   }
 
+  useEffect(() => {
+    const url = 'http://localhost:8080/categorias';
+    axios.get(url)
+      .then(async (res) => {
+        const resposta = await res.data;
+        setCategorias([...resposta]);
+      });
+  }, [
+  ]);
+
   return (
     <CategoriaWrapper>
       <h1>Cadastro de categoria</h1>
@@ -42,7 +52,7 @@ export default function CadastroVideo() {
       <Form onSubmit={handleSubmit}>
 
         <FormField
-          id="nome-categoria"
+          idField="nome-categoria"
           type="text"
           name="nome"
           label="Nome da categoria"
@@ -52,7 +62,7 @@ export default function CadastroVideo() {
         />
 
         <FormField
-          id="descricao-categoria"
+          idField="descricao-categoria"
           type="textarea"
           name="descricao"
           label="Descrição da categoria"
@@ -62,7 +72,7 @@ export default function CadastroVideo() {
         />
 
         <FormField
-          id="cor-categoria"
+          idField="cor-categoria"
           type="color"
           name="cor"
           label="Cor da categoria"
@@ -76,17 +86,19 @@ export default function CadastroVideo() {
         </FormButtonGroup>
       </Form>
 
+      {categorias.length === 0 && (
+        <div>Loading...</div>
+      )}
+
       <ul>
-        {
-          categorias.map((categoria) => (
-            <li key={categoria.nome}>
-              {categoria.nome}
-              {' '}
-              -
-              {categoria.descricao}
-            </li>
-          ))
-        }
+        { categorias.map((categoria) => (
+          <li key={categoria.nome}>
+            {categoria.nome}
+            {' '}
+            -
+            {categoria.descricao}
+          </li>
+        ))}
       </ul>
 
       <Link to="/">
