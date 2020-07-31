@@ -8,7 +8,10 @@ import FormField from '../../components/formField/FormField';
 import FormButtonGroup from '../../components/formButtonGroup/FormButtonGroup';
 import Button from '../../components/button/Button';
 
-const URL_BASE = 'http://localhost:8080/categories';
+const hasLocalHost = window.location.hostname.includes('localhost');
+const URL_BASE = hasLocalHost
+  ? 'http://localhost:8080/categories'
+  : 'https://rianflix.herokuapp.com/categories';
 
 export default function CadastreCategory() {
   const initialState = {
