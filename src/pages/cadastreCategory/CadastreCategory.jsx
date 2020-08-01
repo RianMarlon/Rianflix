@@ -1,42 +1,31 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
 import CategoryWrapper from './style';
 import Form from '../../components/form/Form';
 import FormField from '../../components/formField/FormField';
 import FormButtonGroup from '../../components/formButtonGroup/FormButtonGroup';
 import Button from '../../components/button/Button';
 
-const hasLocalHost = window.location.hostname.includes('localhost');
-const URL_BASE = hasLocalHost
-  ? 'http://localhost:8080/categories'
-  : 'https://rianflix.herokuapp.com/categories';
+import useForm from '../../hooks/useForm';
+import categoryRepository from '../../repositories/categories';
 
-export default function CadastreCategory() {
+function CadastreCategory() {
   const initialState = {
-    name: '',
+    title: '',
     description: '',
     color: '#FF0000',
   };
 
   const [categories, setCategories] = useState([]);
-  const [category, setCategory] = useState({ ...initialState });
+  const { value, updateField, clearForm } = useForm(initialState);
 
   useEffect(() => {
-    axios.get(URL_BASE)
-      .then(async (resp) => {
-        const response = await resp.data;
-        setCategories([...response]);
+    categoryRepository.getAll()
+      .then((categories) => {
+        setCategories([...categories]);
       });
-  }, [
-  ]);
-
-  function updateField(event) {
-    const newCategory = { ...category };
-    newCategory[event.target.name] = event.target.value;
-    setCategory(newCategory);
-  }
+  }, []);
 
   function getUpdatedCategories(newCategory) {
     const newCategories = categories.filter((c) => c.id !== newCategory.id);
@@ -44,23 +33,25 @@ export default function CadastreCategory() {
     setCategories(newCategories);
   }
 
-  function clear() {
-    setCategory({ ...initialState });
-  }
+  function insert() {
+    const hasEmptyValue = !value.title.trim()
+      || !value.description.trim()
+      || !value.color.trim();
 
-  function save() {
-    if (!category.name.trim() || !category.description.trim()) return;
+    if (hasEmptyValue) return;
 
-    axios.post(URL_BASE, category)
-      .then((resp) => {
-        getUpdatedCategories(resp.data);
-        clear();
+    categoryRepository.save(value)
+      .then((category) => {
+        getUpdatedCategories(category);
+      })
+      .catch((err) => {
+        console.log(err.message);
       });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    save();
+    insert();
   }
 
   return (
@@ -70,12 +61,12 @@ export default function CadastreCategory() {
       <Form onSubmit={handleSubmit}>
 
         <FormField
-          idField="name-category"
+          idField="title-category"
           type="text"
-          name="name"
-          label="Nome da categoria"
-          placeholder="Informe o nome da categoria..."
-          value={category.name}
+          name="title"
+          label="Título da categoria"
+          placeholder="Informe o título da categoria..."
+          value={value.title}
           onChange={updateField}
         />
 
@@ -85,7 +76,7 @@ export default function CadastreCategory() {
           name="description"
           label="Descrição da categoria"
           placeholder="Informe a descrição da categoria..."
-          value={category.description}
+          value={value.description}
           onChange={updateField}
         />
 
@@ -94,20 +85,20 @@ export default function CadastreCategory() {
           type="color"
           name="color"
           label="Cor da categoria"
-          value={category.color}
+          value={value.color}
           onChange={updateField}
         />
 
         <FormButtonGroup>
           <Button className="register" onClick={handleSubmit}>Cadastrar</Button>
-          <Button className="clean" onClick={clear}>Limpar</Button>
+          <Button className="clean" onClick={clearForm}>Limpar</Button>
         </FormButtonGroup>
       </Form>
 
       <ul>
         { categories.map((category) => (
           <li key={category.id}>
-            {category.name}
+            {category.title}
             {' '}
             -
             {' '}
@@ -122,3 +113,5 @@ export default function CadastreCategory() {
     </CategoryWrapper>
   );
 }
+
+export default CadastreCategory;
