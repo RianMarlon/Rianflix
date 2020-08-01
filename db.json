@@ -1,5 +1,168 @@
 {
   "categories": [
-    
+    {
+      "id": 1,
+      "title": "Programação",
+      "description": "Minha lista de vídeos/canais preferidos sobre programação",
+      "color": "#CD0000"
+    },
+    {
+      "id": 2,
+      "title": "Aperfeiçoar aprendizagem",
+      "description": "Vídeos que podem mudar seu modo de aprender",
+      "color": "#9400D3"
+    },
+    {
+      "id": 3,
+      "title": "Games",
+      "description": "Minha lista de jogos preferidos/esperados",
+      "color": "#008000"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "title": "Como ORGANIZAR a sua APLICAÇÃO? Essa DICA vai te AJUDAR!!",
+      "url": "https://www.youtube.com/watch?v=x1Td6YnCjfg",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Esta TÉCNICA vai te tornar um(a) PROGRAMADOR(A) MELHOR!!",
+      "url": "https://www.youtube.com/watch?v=yZTaRsoV3PQ",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "title": "Como JavaScript FUNCIONA?",
+      "url": "https://www.youtube.com/watch?v=gb7FDfvHlGg",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "title": "Graduado, Técnico ou Autodidata: Quem nós contrataríamos? // CAC #9",
+      "url": "https://www.youtube.com/watch?v=MaglJvzTwJc",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "title": "LIVE: Quando me tornei um Programador Profissional (A História de 16 Programadores)",
+      "url": "https://www.youtube.com/watch?v=eUwiTnK0EA0",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "title": "O que é SQL e NoSQL? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=aure5d3B88g",
+      "categoryId": 1
+    },
+    {
+      "id": 6,
+      "title": "O que são Microsserviços? (Microservices) #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=jSnLOoGjQ80",
+      "categoryId": 1
+    },
+    {
+      "id": 7,
+      "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
+      "categoryId": 1
+    },
+    {
+      "id": 8,
+      "title": "O que estudar para ser programador / desenvolvedor?",
+      "url": "https://www.youtube.com/watch?v=6PBJUxIiRBI",
+      "categoryId": 1
+    },
+    {
+      "id": 9,
+      "title": "CLEAN CODE #2: O que é código limpo?",
+      "url": "https://www.youtube.com/watch?v=ZVtGbO_CnfA",
+      "categoryId": 1
+    },
+    {
+      "id": 10,
+      "title": "O Framework Que Vai Mudar Como Você Faz Desenvolvimento Web Daqui Pra Frente",
+      "url": "https://www.youtube.com/watch?v=WVtijTZPZck",
+      "categoryId": 1
+    },
+    {
+      "id": 11,
+      "title": "Organize a sua Rotina de Estudo de Programação! UM Assunto ou VÁRIOS Assuntos?",
+      "url": "https://www.youtube.com/watch?v=ULI3-LeWSVY",
+      "categoryId": 2
+    },
+    {
+      "id": 12,
+      "title": "COMO APRENDER MAIS RÁPIDO E MELHOR? (Super Conselho #1)",
+      "url": "https://www.youtube.com/watch?v=x2JEhkmyeKQ",
+      "categoryId": 2
+    },
+    {
+      "id": 13,
+      "title": "Macetes para Aprender uma Linguagem de Programação Nova // Vlog #19",
+      "url": "https://www.youtube.com/watch?v=hOVxpMCkozI",
+      "categoryId": 2
+    },
+    {
+      "id": 14,
+      "title": "Como posso estudar melhor? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk",
+      "categoryId": 2
+    },
+    {
+      "id": 15,
+      "title": "Como aprender a programar?",
+      "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be",
+      "categoryId": 2
+    },
+    {
+      "id": 16,
+      "title": "God of War 4",
+      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE",
+      "categoryId": 3
+    },
+    {
+      "id": 17,
+      "title": "The Last Of Us 2",
+      "url": "https://www.youtube.com/watch?v=aqcBjWXlWMU",
+      "categoryId": 3
+    },
+    {
+      "id": 18,
+      "title": "RIO Raised In Oblivion",
+      "url": "https://www.youtube.com/watch?v=l8ypmhlLtUE",
+      "categoryId": 3
+    },
+    {
+      "id": 19,
+      "title": "Resident Evil 8",
+      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA",
+      "categoryId": 3
+    },
+    {
+      "id": 20,
+      "title": "Cyberpunk 2077",
+      "url": "https://www.youtube.com/watch?v=ixl31324UxE",
+      "categoryId": 3
+    },
+    {
+      "id": 21,
+      "title": "Tom Clacy's Rainbox Six Siege",
+      "url": "https://www.youtube.com/watch?v=6wlvYh0h63k",
+      "categoryId": 3
+    },
+    {
+      "id": 22,
+      "title": "Battlefield 4",
+      "url": "https://www.youtube.com/watch?v=hl-VV9loYLw",
+      "categoryId": 3
+    },
+    {
+      "id": 23,
+      "title": "Battlefield 1",
+      "url": "https://www.youtube.com/watch?v=c7nRTF2SowQ",
+      "categoryId": 3
+    }
   ]
 }
