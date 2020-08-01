@@ -3,4 +3,6 @@ const URL_BACKEND = hasLocalHost
   ? 'http://localhost:8080'
   : 'https://rianflix.herokuapp.com';
 
-export default URL_BACKEND;
+export default {
+  URL_BACKEND,
+};
