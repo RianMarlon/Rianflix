@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import CategoryWrapper from './style';
+import CategoryWrapper from './styles';
 import Form from '../../components/form/Form';
 import FormField from '../../components/formField/FormField';
 import FormButtonGroup from '../../components/formButtonGroup/FormButtonGroup';
@@ -24,6 +24,9 @@ function CadastreCategory() {
     categoryRepository.getAll()
       .then((categories) => {
         setCategories([...categories]);
+      })
+      .catch((err) => {
+        console.log(err.message);
       });
   }, []);
 
@@ -56,6 +59,10 @@ function CadastreCategory() {
 
   return (
     <CategoryWrapper>
+      <Link to="/cadastro/video">
+        Cadastro de vídeo
+      </Link>
+
       <h1>Cadastro de categoria</h1>
 
       <Form onSubmit={handleSubmit}>
