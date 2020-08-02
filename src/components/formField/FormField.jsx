@@ -4,24 +4,34 @@ import './FormField.css';
 import PropTypes from 'prop-types';
 
 function FormField({
-  label, idField, name, type, placeholder, value, onChange,
+  label, idField, name, type, placeholder, value, onChange, options,
 }) {
   const props = {
     id: idField, name, type, placeholder, value, onChange,
   };
 
-  let input = <input {...props} />;
+  let field = <input {...props} />;
 
   if (type === 'textarea') {
     delete props.type;
 
-    input = <textarea {...props} />;
+    field = <textarea {...props} />;
+  } else if (type === 'select') {
+    field = (
+      <select name={name} id={idField} value={value} onChange={onChange}>
+        {options.map((op) => (
+          <option key={op.value} value={op.value}>
+            {op.label}
+          </option>
+        ))}
+      </select>
+    );
   }
 
   return (
     <div>
       <label htmlFor={idField}>{label}</label>
-      {input}
+      {field}
     </div>
   );
 }
@@ -31,6 +41,7 @@ FormField.defaultProps = {
   value: '',
   placeholder: '',
   onChange: () => {},
+  options: [{}],
 };
 
 FormField.propTypes = {
@@ -41,6 +52,7 @@ FormField.propTypes = {
   placeholder: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  options: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default FormField;
