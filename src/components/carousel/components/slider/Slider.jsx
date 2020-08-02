@@ -17,12 +17,13 @@ const Container = styled.ul`
     z-index: 50;
     
     &:before {
-      font-size: 30px;
+      font-size: 2.25rem;
+      color: ${({ backgroundArrows }) => backgroundArrows};
     }
   }
 
   .slick-prev {
-    left: 0;
+    left: 10px;
   }
 
   .slick-next {
@@ -41,8 +42,8 @@ export const SliderItem = styled.li`
   }
 `;
 
-const Slider = ({ children }) => (
-  <Container>
+const Slider = ({ backgroundArrows, children }) => (
+  <Container backgroundArrows={backgroundArrows}>
     <SlickSlider {...{
       dots: false,
       infinite: true,

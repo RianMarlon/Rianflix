@@ -22,7 +22,7 @@ function VideoCardGroup({ ignoreFirstVideo, category }) {
           )}
         </>
       )}
-      <Slider>
+      <Slider backgroundArrows={categoryColor}>
         {videos.map((video, index) => {
           if (ignoreFirstVideo && index === 0) {
             return null;
