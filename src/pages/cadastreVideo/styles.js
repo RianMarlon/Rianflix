@@ -11,7 +11,7 @@ const VideoWrapper = styled.div`
     a {
         align-self: flex-start;
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         margin-top: 40px;
     }
 

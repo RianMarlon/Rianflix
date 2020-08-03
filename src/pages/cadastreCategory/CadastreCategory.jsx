@@ -60,7 +60,7 @@ function CadastreCategory() {
   return (
     <CategoryWrapper>
       <Link to="/cadastro/video">
-        Cadastro de vídeo
+        Cadastro de vídeo &rarr;
       </Link>
 
       <h1>Cadastro de categoria</h1>
@@ -115,7 +115,7 @@ function CadastreCategory() {
       </ul>
 
       <Link to="/">
-        Voltar para home
+        &larr; Voltar para home
       </Link>
     </CategoryWrapper>
   );

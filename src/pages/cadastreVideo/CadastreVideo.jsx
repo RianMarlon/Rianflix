@@ -76,7 +76,7 @@ function CadastreVideo() {
     <VideoWrapper>
 
       <Link to="/cadastro/categoria">
-        Cadastro de categoria
+        Cadastro de categoria &rarr;
       </Link>
 
       <h1>Cadastro de vídeo</h1>
@@ -97,7 +97,7 @@ function CadastreVideo() {
           idField="url-video"
           type="url"
           name="url"
-          label="URL do vídeo"
+          label="URL do vídeo (YouTube)"
           placeholder="Informe a URL do vídeo..."
           value={value.url}
           onChange={updateField}
@@ -128,7 +128,7 @@ function CadastreVideo() {
       </ul>
 
       <Link to="/">
-        Voltar para home
+        &larr; Voltar para home
       </Link>
     </VideoWrapper>
   );
